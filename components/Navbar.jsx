@@ -4,7 +4,11 @@ import { FcMenu, FcHome, FcAbout } from 'react-icons/fc';
 import { BsSearch } from 'react-icons/bs';
 import { FiKey } from 'react-icons/fi';
 
+
+
+
 const Navbar = () => 
+
      ( 
         <Flex p='2' borderBottom='1px' borderColor='gray.100'>
             <Box fontSize='3xl' color='gray.600' fontWeight='bold'>
@@ -32,5 +36,5 @@ const Navbar = () =>
             </Box>
         </Flex>
      );
-
+     
 export default Navbar;

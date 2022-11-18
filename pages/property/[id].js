@@ -5,8 +5,9 @@ import { BsGridFill } from 'react-icons/bs';
 import { GoVerified } from 'react-icons/go';
 import millify from 'millify';
 import ImageSrollbar from '../../components/ImageScrollbar';
-
 import { baseUrl, fetchApi } from '../../utils/fetchApi';
+import HTMLReactParser from "html-react-parser";
+
 
 const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos }}) => (
     
@@ -27,7 +28,7 @@ const PropertyDetails = ({ propertyDetails: { price, rentFrequency, rooms, title
                 </Flex>
                 <Box marginTop='2'>
                 <Text fontSize='lg' marginBottom='2' fontWeight='bold'>{title}</Text>
-                <Text lineHeight='2' color='gray.600'>{description}</Text>
+                <Text lineHeight='2' color='gray.600'>{HTMLReactParser(description)}</Text>
                 </Box>
                 <Flex flexWrap='wrap' textTransform='uppercase' justifyContent='space-between'>
                     <Flex justifyContent='space-between' w='400px' borderBottom='1px' borderColor='gray.100' p='3'>
