@@ -14,7 +14,7 @@ export const filterData = [
         { name: 'Monthly', value: 'monthly' },
         { name: 'Yearly', value: 'yearly' },
       ],
-      placeholder: 'Rent Frequency',
+      placeholder: 'Frequency',
       queryName: 'rentFrequency',
     },
     {
