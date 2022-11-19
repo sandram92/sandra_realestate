@@ -12,7 +12,7 @@ const Navbar = () =>
      ( 
         <Flex p='2' borderBottom='1px' borderColor='gray.100'>
             <Box fontSize='3xl' color='gray.600' fontWeight='bold'>
-                <Link href='/' paddingLeft='2'>Realtor</Link>
+                <Link href='/' paddingLeft='2'>RealtoR</Link>
             </Box>
             <Spacer/>
             <Box>
