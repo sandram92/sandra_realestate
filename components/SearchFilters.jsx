@@ -17,15 +17,16 @@ const SearchFilters = () => {
     const searchProperties = (filterValues) => {
       
        const path = router.pathname;
+       
        const { query } = router;
-
+       
+      
        const values = getFilterValues(filterValues);
-
+    
        values.forEach((item) => {
            if(item.value && filterValues?.[item.name]){
               query[item.name] = item.value 
            }
-           
        })
        router.push({pathname: path , query: query})
     }
@@ -45,7 +46,6 @@ const SearchFilters = () => {
                                {item.name}
                            </option>
                        ))}
-
                    </Select>
                </Box>
            ))}
